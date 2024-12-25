@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "limits.h": "c",
+        "fcntl.h": "c",
+        "types.h": "c",
+        "unistd.h": "c",
+        "*.tcc": "c",
+        "fstream": "c"
+    }
+}
