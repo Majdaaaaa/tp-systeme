@@ -17,24 +17,26 @@ int main()
         {
             if (fork())
             {
-                sleep(20);
+                sleep(2);
                 // exit(0);
             }
             else
             {
                 // sleep(0);
                 // exit(0);
-                execvp("sleep", (char *[]){"sleep", "0", NULL});
-                // exit(0);
+                execvp("sleep", (char *[]){"sleep", "1", NULL});
+                exit(0);
             }
         }
         else
         {
+            execvp("sleep", (char *[]){"sleep", "1", NULL});
             exit(0);
         }
     }
     else
     {
+        execvp("sleep", (char *[]){"sleep", "1", NULL});
         exit(0);
     }
     exit(0);
